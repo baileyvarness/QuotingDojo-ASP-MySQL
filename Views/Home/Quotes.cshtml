@@ -1,0 +1,13 @@
+@model List<Dictionary<string, object>>
+
+<h1>Quotes</h1>
+
+
+@foreach (var quote in Model)
+{
+
+        <p>"@quote["YourQuote"]"</p>
+        <p>-@quote["YourName"] @quote["created_at"]</p>
+        <hr>
+
+}
